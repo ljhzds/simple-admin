@@ -1,5 +1,6 @@
 <template>
 	<section>
+	<!--<div>-->
 		<!--工具条-->
 		<el-col :span="24" class="toolbar">
 			<el-form :inline="true" :model="filters">
@@ -29,6 +30,7 @@
 				</el-table-column>
 		</el-table>
 		</template>
+  <!--</div>-->
 	</section>
 </template>
 <script>

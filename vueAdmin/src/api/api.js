@@ -5,7 +5,8 @@ let login_url = 'http://119.29.103.193:8081/login';
 let user_list = 'http://119.29.103.193:8081/user/list'
 let branch_list = 'http://119.29.103.193:8081/branch/list'
 let node_list = 'http://119.29.103.193:8081/node/list'
-
+let product_list = 'http://127.0.0.1:8081/gfjj/product'
+let product_update = 'http://127.0.0.1:8081/gfjj/product'
 
 //console.log(login_url);
 export const requestLogino = params => { return axios.post(`${base}/login`, params).then(res => res.data); };
@@ -22,3 +23,6 @@ export const removeUser = params => { return axios.get(`${base}/user/remove`, { 
 export const editUser = params => { return axios.get(`${base}/user/edit`, { params: params }); };
 
 export const addUser = params => { return axios.get(`${base}/user/add`, { params: params }); };
+
+export const getProducts = params => { return axios.get(product_list, { params: params }); };
+export const editProduct = params => { return axios.post(product_update, params).then(res => res.data); };
