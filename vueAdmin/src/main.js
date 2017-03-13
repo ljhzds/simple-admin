@@ -21,6 +21,7 @@ Vue.use(Vuex)
 NProgress.configure({ showSpinner: false });
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 
@@ -35,6 +36,11 @@ const router = new VueRouter({
 //    next({ path: '/login' })
 //  } else {
 //    next()
+//  }
+//})
+//router.beforeEach((to, from, next) => {
+//  if (to.path == '/') {
+//    next({ path: '/product' })
 //  }
 //})
 

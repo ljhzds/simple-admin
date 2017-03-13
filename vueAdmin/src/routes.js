@@ -1,7 +1,7 @@
 import Login from './pages/Login.vue'
 import NotFound from './pages/404.vue'
 import Home from './pages/Home.vue'
-//import Main from './pages/Main.vue'
+import Welcome from './pages/welcome.vue'
 import prdManage from './pages/gfjj/prdManage.vue'
 import impProduct from './pages/gfjj/impProduct.vue'
 import reportManage from './pages/gfjj/reportManage.vue'
@@ -61,6 +61,10 @@ let routes = [
               name: '进项发票查询'
             }
         ]
+    },
+    {
+      path: '/welcome',
+      component: Welcome
     },
     {
         path: '*',
